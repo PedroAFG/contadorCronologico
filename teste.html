@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Expressão Cronológica</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">
+            Olá, use sempre que precisar e se puder, contribua com seu 
+            <a href="#">feedback</a>!
+        </h1>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <!-- Formulário para entrada da expressão cronológica -->
+                <form id="cronForm">
+                    <div class="mb-3">
+                        <label for="cronExpression" class="form-label">Insira a Expressão Cronológica</label>
+                        <input type="text" class="form-control" id="cronExpression" placeholder="Exemplo: 0 */30 * * * *">
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Interpretar Expressão</button>
+                </form>
+
+                <!-- Exibição do resultado -->
+                <div class="mt-4">
+                    <h5>Interpretação:</h5>
+                    <p id="result" class="alert alert-secondary">Aguardando entrada...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script para processar a expressão cronológica -->
+    <script>
+        function interpretCronExpression(cronExpression) {
+            const cronParts = cronExpression.split(' ');
+
+            if (cronParts.length !== 6) {
+                return "A expressão cron deve ter 6 campos (segundo, minuto, hora, dia do mês, mês, dia da semana)";
+            }
+
+            const [second, minute, hour, dayOfMonth, month, dayOfWeek] = cronParts;
+
+            const timeDescriptions = {
+                second: interpretPart(second, "segundo"),
+                minute: interpretPart(minute, "minuto"),
+                hour: interpretPart(hour, "hora"),
+                dayOfMonth: interpretPart(dayOfMonth, "dia do mês"),
+                month: interpretPart(month, "mês"),
+                dayOfWeek: interpretPart(dayOfWeek, "dia da semana")
+            };
+
+            return `
+                A tarefa será executada:
+                - No segundo: ${timeDescriptions.second}
+                - No minuto: ${timeDescriptions.minute}
+                - Na hora: ${timeDescriptions.hour}
+                - No dia do mês: ${timeDescriptions.dayOfMonth}
+                - No mês: ${timeDescriptions.month}
+                - No dia da semana: ${timeDescriptions.dayOfWeek}
+            `;
+        }
+
+        function interpretPart(part, unit) {
+            if (part === "*") {
+                return `todo(s) ${unit}(s)`;
+            } else if (part.includes("/")) {
+                const [start, interval] = part.split("/");
+                if (start === "*") {
+                    return `a cada ${interval} ${unit}(s)`;
+                } else {
+                    return `começando em ${start}, a cada ${interval} ${unit}(s)`;
+                }
+            } else if (part.includes("-")) {
+                const [start, end] = part.split("-");
+                return `de ${start} até ${end} ${unit}(s)`;
+            } else if (part.includes(",")) {
+                const values = part.split(",").join(", ");
+                return `nos ${unit}(s) ${values}`;
+            } else {
+                return `no ${unit} ${part}`;
+            }
+        }
+
+        document.getElementById('cronForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const cronExpression = document.getElementById('cronExpression').value;
+            const result = interpretCronExpression(cronExpression);
+            document.getElementById('result').innerHTML = result;
+        });
+    </script>
+</body>
+</html>
