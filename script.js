@@ -11,7 +11,7 @@ function interpretaExpressCrono(cronExpression) {
         second: interpretPart(second, "segundo"),
         minute: interpretPart(minute, "minuto"),
         hour: interpretPart(hour, "hora"),
-        dayOfMonth: interpretPart(dayOfMonth, "dia do mês"),
+        dayOfMonth: interpretPart(dayOfMonth, "do mês"),
         month: interpretPart(month, "mês"),
         dayOfWeek: interpretPart(dayOfWeek, "dia da semana")
     };
@@ -21,7 +21,7 @@ function interpretaExpressCrono(cronExpression) {
         - No segundo: ${timeDescriptions.second}
         - No minuto: ${timeDescriptions.minute}
         - Na hora: ${timeDescriptions.hour}
-        - No dia do mês: ${timeDescriptions.dayOfMonth}
+        - No dia: ${timeDescriptions.dayOfMonth}
         - No mês: ${timeDescriptions.month}
         - No dia da semana: ${timeDescriptions.dayOfWeek}
     `;
