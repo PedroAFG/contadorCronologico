@@ -1,0 +1,1744 @@
+{
+    "instant": {
+        "epochSecond": 1726512286,
+        "nanoOfSecond": 212000000
+    },
+    "thread": "qtp816302479-93",
+    "level": "ERROR",
+    "loggerName": "br.com.altimus.controller.advice.GlobalExceptionHandler",
+    "message": "could not extract ResultSet",
+    "thrown": {
+        "commonElementCount": 0,
+        "localizedMessage": "could not extract ResultSet",
+        "message": "could not extract ResultSet",
+        "name": "org.hibernate.exception.SQLGrammarException",
+        "cause": {
+            "commonElementCount": 175,
+            "localizedMessage": "ERROR: operator does not exist: bigint = bytea\n Dica: No operator matches the given name and argument types. You might need to add explicit type casts.\n Posição: 820",
+            "message": "ERROR: operator does not exist: bigint = bytea\n Dica: No operator matches the given name and argument types. You might need to add explicit type casts.\n Posição: 820",
+            "name": "org.postgresql.util.PSQLException",
+            "extendedStackTrace": [
+                {
+                    "class": "org.postgresql.core.v3.QueryExecutorImpl",
+                    "method": "receiveErrorResponse",
+                    "file": "QueryExecutorImpl.java",
+                    "line": 2468,
+                    "exact": false,
+                    "location": "postgresql-42.2.6.jar!/",
+                    "version": "42.2.6"
+                },
+                {
+                    "class": "org.postgresql.core.v3.QueryExecutorImpl",
+                    "method": "processResults",
+                    "file": "QueryExecutorImpl.java",
+                    "line": 2211,
+                    "exact": false,
+                    "location": "postgresql-42.2.6.jar!/",
+                    "version": "42.2.6"
+                },
+                {
+                    "class": "org.postgresql.core.v3.QueryExecutorImpl",
+                    "method": "execute",
+                    "file": "QueryExecutorImpl.java",
+                    "line": 309,
+                    "exact": false,
+                    "location": "postgresql-42.2.6.jar!/",
+                    "version": "42.2.6"
+                },
+                {
+                    "class": "org.postgresql.jdbc.PgStatement",
+                    "method": "executeInternal",
+                    "file": "PgStatement.java",
+                    "line": 446,
+                    "exact": false,
+                    "location": "postgresql-42.2.6.jar!/",
+                    "version": "42.2.6"
+                },
+                {
+                    "class": "org.postgresql.jdbc.PgStatement",
+                    "method": "execute",
+                    "file": "PgStatement.java",
+                    "line": 370,
+                    "exact": false,
+                    "location": "postgresql-42.2.6.jar!/",
+                    "version": "42.2.6"
+                },
+                {
+                    "class": "org.postgresql.jdbc.PgPreparedStatement",
+                    "method": "executeWithFlags",
+                    "file": "PgPreparedStatement.java",
+                    "line": 149,
+                    "exact": false,
+                    "location": "postgresql-42.2.6.jar!/",
+                    "version": "42.2.6"
+                },
+                {
+                    "class": "org.postgresql.jdbc.PgPreparedStatement",
+                    "method": "executeQuery",
+                    "file": "PgPreparedStatement.java",
+                    "line": 108,
+                    "exact": false,
+                    "location": "postgresql-42.2.6.jar!/",
+                    "version": "42.2.6"
+                },
+                {
+                    "class": "com.zaxxer.hikari.pool.ProxyPreparedStatement",
+                    "method": "executeQuery",
+                    "file": "ProxyPreparedStatement.java",
+                    "line": 52,
+                    "exact": false,
+                    "location": "HikariCP-3.2.0.jar!/",
+                    "version": "?"
+                },
+                {
+                    "class": "com.zaxxer.hikari.pool.HikariProxyPreparedStatement",
+                    "method": "executeQuery",
+                    "file": "HikariProxyPreparedStatement.java",
+                    "line": -1,
+                    "exact": false,
+                    "location": "HikariCP-3.2.0.jar!/",
+                    "version": "?"
+                },
+                {
+                    "class": "org.hibernate.engine.jdbc.internal.ResultSetReturnImpl",
+                    "method": "extract",
+                    "file": "ResultSetReturnImpl.java",
+                    "line": 60,
+                    "exact": false,
+                    "location": "hibernate-core-5.3.10.Final.jar!/",
+                    "version": "5.3.10.Final"
+                }
+            ]
+        },
+        "extendedStackTrace": [
+            {
+                "class": "org.hibernate.exception.internal.SQLStateConversionDelegate",
+                "method": "convert",
+                "file": "SQLStateConversionDelegate.java",
+                "line": 106,
+                "exact": false,
+                "location": "hibernate-core-5.3.10.Final.jar!/",
+                "version": "5.3.10.Final"
+            },
+            {
+                "class": "org.hibernate.exception.internal.StandardSQLExceptionConverter",
+                "method": "convert",
+                "file": "StandardSQLExceptionConverter.java",
+                "line": 42,
+                "exact": false,
+                "location": "hibernate-core-5.3.10.Final.jar!/",
+                "version": "5.3.10.Final"
+            },
+            {
+                "class": "org.hibernate.engine.jdbc.spi.SqlExceptionHelper",
+                "method": "convert",
+                "file": "SqlExceptionHelper.java",
+                "line": 113,
+                "exact": false,
+                "location": "hibernate-core-5.3.10.Final.jar!/",
+                "version": "5.3.10.Final"
+            },
+            {
+                "class": "org.hibernate.engine.jdbc.spi.SqlExceptionHelper",
+                "method": "convert",
+                "file": "SqlExceptionHelper.java",
+                "line": 99,
+                "exact": false,
+                "location": "hibernate-core-5.3.10.Final.jar!/",
+                "version": "5.3.10.Final"
+            },
+            {
+                "class": "org.hibernate.engine.jdbc.internal.ResultSetReturnImpl",
+                "method": "extract",
+                "file": "ResultSetReturnImpl.java",
+                "line": 69,
+                "exact": false,
+                "location": "hibernate-core-5.3.10.Final.jar!/",
+                "version": "5.3.10.Final"
+            },
+            {
+                "class": "org.hibernate.loader.Loader",
+                "method": "getResultSet",
+                "file": "Loader.java",
+                "line": 2167,
+                "exact": false,
+                "location": "hibernate-core-5.3.10.Final.jar!/",
+                "version": "5.3.10.Final"
+            },
+            {
+                "class": "org.hibernate.loader.Loader",
+                "method": "executeQueryStatement",
+                "file": "Loader.java",
+                "line": 1930,
+                "exact": false,
+                "location": "hibernate-core-5.3.10.Final.jar!/",
+                "version": "5.3.10.Final"
+            },
+            {
+                "class": "org.hibernate.loader.Loader",
+                "method": "executeQueryStatement",
+                "file": "Loader.java",
+                "line": 1892,
+                "exact": false,
+                "location": "hibernate-core-5.3.10.Final.jar!/",
+                "version": "5.3.10.Final"
+            },
+            {
+                "class": "org.hibernate.loader.Loader",
+                "method": "doQuery",
+                "file": "Loader.java",
+                "line": 937,
+                "exact": false,
+                "location": "hibernate-core-5.3.10.Final.jar!/",
+                "version": "5.3.10.Final"
+            },
+            {
+                "class": "org.hibernate.loader.Loader",
+                "method": "doQueryAndInitializeNonLazyCollections",
+                "file": "Loader.java",
+                "line": 340,
+                "exact": false,
+                "location": "hibernate-core-5.3.10.Final.jar!/",
+                "version": "5.3.10.Final"
+            },
+            {
+                "class": "org.hibernate.loader.Loader",
+                "method": "doList",
+                "file": "Loader.java",
+                "line": 2689,
+                "exact": false,
+                "location": "hibernate-core-5.3.10.Final.jar!/",
+                "version": "5.3.10.Final"
+            },
+            {
+                "class": "org.hibernate.loader.Loader",
+                "method": "doList",
+                "file": "Loader.java",
+                "line": 2672,
+                "exact": false,
+                "location": "hibernate-core-5.3.10.Final.jar!/",
+                "version": "5.3.10.Final"
+            },
+            {
+                "class": "org.hibernate.loader.Loader",
+                "method": "listIgnoreQueryCache",
+                "file": "Loader.java",
+                "line": 2506,
+                "exact": false,
+                "location": "hibernate-core-5.3.10.Final.jar!/",
+                "version": "5.3.10.Final"
+            },
+            {
+                "class": "org.hibernate.loader.Loader",
+                "method": "list",
+                "file": "Loader.java",
+                "line": 2501,
+                "exact": false,
+                "location": "hibernate-core-5.3.10.Final.jar!/",
+                "version": "5.3.10.Final"
+            },
+            {
+                "class": "org.hibernate.loader.custom.CustomLoader",
+                "method": "list",
+                "file": "CustomLoader.java",
+                "line": 338,
+                "exact": false,
+                "location": "hibernate-core-5.3.10.Final.jar!/",
+                "version": "5.3.10.Final"
+            },
+            {
+                "class": "org.hibernate.internal.SessionImpl",
+                "method": "listCustomQuery",
+                "file": "SessionImpl.java",
+                "line": 2223,
+                "exact": false,
+                "location": "hibernate-core-5.3.10.Final.jar!/",
+                "version": "5.3.10.Final"
+            },
+            {
+                "class": "org.hibernate.internal.AbstractSharedSessionContract",
+                "method": "list",
+                "file": "AbstractSharedSessionContract.java",
+                "line": 1069,
+                "exact": false,
+                "location": "hibernate-core-5.3.10.Final.jar!/",
+                "version": "5.3.10.Final"
+            },
+            {
+                "class": "org.hibernate.query.internal.NativeQueryImpl",
+                "method": "doList",
+                "file": "NativeQueryImpl.java",
+                "line": 170,
+                "exact": false,
+                "location": "hibernate-core-5.3.10.Final.jar!/",
+                "version": "5.3.10.Final"
+            },
+            {
+                "class": "org.hibernate.query.internal.AbstractProducedQuery",
+                "method": "list",
+                "file": "AbstractProducedQuery.java",
+                "line": 1505,
+                "exact": false,
+                "location": "hibernate-core-5.3.10.Final.jar!/",
+                "version": "5.3.10.Final"
+            },
+            {
+                "class": "org.hibernate.query.internal.AbstractProducedQuery",
+                "method": "getSingleResult",
+                "file": "AbstractProducedQuery.java",
+                "line": 1553,
+                "exact": false,
+                "location": "hibernate-core-5.3.10.Final.jar!/",
+                "version": "5.3.10.Final"
+            },
+            {
+                "class": "org.springframework.data.jpa.repository.query.JpaQueryExecution$SingleEntityExecution",
+                "method": "doExecute",
+                "file": "JpaQueryExecution.java",
+                "line": 221,
+                "exact": false,
+                "location": "spring-data-jpa-2.1.10.RELEASE.jar!/",
+                "version": "2.1.10.RELEASE"
+            },
+            {
+                "class": "org.springframework.data.jpa.repository.query.JpaQueryExecution",
+                "method": "execute",
+                "file": "JpaQueryExecution.java",
+                "line": 91,
+                "exact": false,
+                "location": "spring-data-jpa-2.1.10.RELEASE.jar!/",
+                "version": "2.1.10.RELEASE"
+            },
+            {
+                "class": "org.springframework.data.jpa.repository.query.AbstractJpaQuery",
+                "method": "doExecute",
+                "file": "AbstractJpaQuery.java",
+                "line": 136,
+                "exact": false,
+                "location": "spring-data-jpa-2.1.10.RELEASE.jar!/",
+                "version": "2.1.10.RELEASE"
+            },
+            {
+                "class": "org.springframework.data.jpa.repository.query.AbstractJpaQuery",
+                "method": "execute",
+                "file": "AbstractJpaQuery.java",
+                "line": 125,
+                "exact": false,
+                "location": "spring-data-jpa-2.1.10.RELEASE.jar!/",
+                "version": "2.1.10.RELEASE"
+            },
+            {
+                "class": "org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor",
+                "method": "doInvoke",
+                "file": "RepositoryFactorySupport.java",
+                "line": 605,
+                "exact": false,
+                "location": "spring-data-commons-2.1.10.RELEASE.jar!/",
+                "version": "2.1.10.RELEASE"
+            },
+            {
+                "class": "org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor",
+                "method": "lambda$invoke$3",
+                "file": "RepositoryFactorySupport.java",
+                "line": 595,
+                "exact": false,
+                "location": "spring-data-commons-2.1.10.RELEASE.jar!/",
+                "version": "2.1.10.RELEASE"
+            },
+            {
+                "class": "org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor",
+                "method": "invoke",
+                "file": "RepositoryFactorySupport.java",
+                "line": 595,
+                "exact": false,
+                "location": "spring-data-commons-2.1.10.RELEASE.jar!/",
+                "version": "2.1.10.RELEASE"
+            },
+            {
+                "class": "org.springframework.aop.framework.ReflectiveMethodInvocation",
+                "method": "proceed",
+                "file": "ReflectiveMethodInvocation.java",
+                "line": 186,
+                "exact": false,
+                "location": "spring-aop-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor",
+                "method": "invoke",
+                "file": "DefaultMethodInvokingMethodInterceptor.java",
+                "line": 59,
+                "exact": false,
+                "location": "spring-data-commons-2.1.10.RELEASE.jar!/",
+                "version": "2.1.10.RELEASE"
+            },
+            {
+                "class": "org.springframework.aop.framework.ReflectiveMethodInvocation",
+                "method": "proceed",
+                "file": "ReflectiveMethodInvocation.java",
+                "line": 186,
+                "exact": false,
+                "location": "spring-aop-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.springframework.transaction.interceptor.TransactionAspectSupport",
+                "method": "invokeWithinTransaction",
+                "file": "TransactionAspectSupport.java",
+                "line": 295,
+                "exact": false,
+                "location": "spring-tx-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.springframework.transaction.interceptor.TransactionInterceptor",
+                "method": "invoke",
+                "file": "TransactionInterceptor.java",
+                "line": 98,
+                "exact": false,
+                "location": "spring-tx-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.springframework.aop.framework.ReflectiveMethodInvocation",
+                "method": "proceed",
+                "file": "ReflectiveMethodInvocation.java",
+                "line": 186,
+                "exact": false,
+                "location": "spring-aop-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.springframework.dao.support.PersistenceExceptionTranslationInterceptor",
+                "method": "invoke",
+                "file": "PersistenceExceptionTranslationInterceptor.java",
+                "line": 139,
+                "exact": false,
+                "location": "spring-tx-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.springframework.aop.framework.ReflectiveMethodInvocation",
+                "method": "proceed",
+                "file": "ReflectiveMethodInvocation.java",
+                "line": 186,
+                "exact": false,
+                "location": "spring-aop-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor",
+                "method": "invoke",
+                "file": "CrudMethodMetadataPostProcessor.java",
+                "line": 144,
+                "exact": false,
+                "location": "spring-data-jpa-2.1.10.RELEASE.jar!/",
+                "version": "2.1.10.RELEASE"
+            },
+            {
+                "class": "org.springframework.aop.framework.ReflectiveMethodInvocation",
+                "method": "proceed",
+                "file": "ReflectiveMethodInvocation.java",
+                "line": 186,
+                "exact": false,
+                "location": "spring-aop-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$ExposeRepositoryInvocationInterceptor",
+                "method": "invoke",
+                "file": "CrudMethodMetadataPostProcessor.java",
+                "line": 364,
+                "exact": false,
+                "location": "spring-data-jpa-2.1.10.RELEASE.jar!/",
+                "version": "2.1.10.RELEASE"
+            },
+            {
+                "class": "org.springframework.aop.framework.ReflectiveMethodInvocation",
+                "method": "proceed",
+                "file": "ReflectiveMethodInvocation.java",
+                "line": 186,
+                "exact": false,
+                "location": "spring-aop-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.springframework.aop.interceptor.ExposeInvocationInterceptor",
+                "method": "invoke",
+                "file": "ExposeInvocationInterceptor.java",
+                "line": 93,
+                "exact": false,
+                "location": "spring-aop-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.springframework.aop.framework.ReflectiveMethodInvocation",
+                "method": "proceed",
+                "file": "ReflectiveMethodInvocation.java",
+                "line": 186,
+                "exact": false,
+                "location": "spring-aop-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor",
+                "method": "invoke",
+                "file": "SurroundingTransactionDetectorMethodInterceptor.java",
+                "line": 61,
+                "exact": false,
+                "location": "spring-data-commons-2.1.10.RELEASE.jar!/",
+                "version": "2.1.10.RELEASE"
+            },
+            {
+                "class": "org.springframework.aop.framework.ReflectiveMethodInvocation",
+                "method": "proceed",
+                "file": "ReflectiveMethodInvocation.java",
+                "line": 186,
+                "exact": false,
+                "location": "spring-aop-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.springframework.aop.framework.JdkDynamicAopProxy",
+                "method": "invoke",
+                "file": "JdkDynamicAopProxy.java",
+                "line": 212,
+                "exact": false,
+                "location": "spring-aop-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "com.sun.proxy.$Proxy185",
+                "method": "impostosVeiculoDetalhamento",
+                "line": -1,
+                "exact": false,
+                "location": "?",
+                "version": "?"
+            },
+            {
+                "class": "br.com.altimus.service.fiscal.T_NotaFiscalService",
+                "method": "getImpostoItemNotaVeiculo",
+                "file": "T_NotaFiscalService.java",
+                "line": 2564,
+                "exact": false,
+                "location": "altimus-service-1.0-SNAPSHOT.jar!/",
+                "version": "1.0-SNAPSHOT"
+            },
+            {
+                "class": "br.com.altimus.service.fiscal.T_NotaFiscalService$$FastClassBySpringCGLIB$$338bc5f5",
+                "method": "invoke",
+                "file": "<generated>",
+                "line": -1,
+                "exact": false,
+                "location": "altimus-service-1.0-SNAPSHOT.jar!/",
+                "version": "1.0-SNAPSHOT"
+            },
+            {
+                "class": "org.springframework.cglib.proxy.MethodProxy",
+                "method": "invoke",
+                "file": "MethodProxy.java",
+                "line": 218,
+                "exact": false,
+                "location": "spring-core-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation",
+                "method": "invokeJoinpoint",
+                "file": "CglibAopProxy.java",
+                "line": 749,
+                "exact": false,
+                "location": "spring-aop-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.springframework.aop.framework.ReflectiveMethodInvocation",
+                "method": "proceed",
+                "file": "ReflectiveMethodInvocation.java",
+                "line": 163,
+                "exact": false,
+                "location": "spring-aop-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.springframework.transaction.interceptor.TransactionAspectSupport",
+                "method": "invokeWithinTransaction",
+                "file": "TransactionAspectSupport.java",
+                "line": 295,
+                "exact": false,
+                "location": "spring-tx-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.springframework.transaction.interceptor.TransactionInterceptor",
+                "method": "invoke",
+                "file": "TransactionInterceptor.java",
+                "line": 98,
+                "exact": false,
+                "location": "spring-tx-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.springframework.aop.framework.ReflectiveMethodInvocation",
+                "method": "proceed",
+                "file": "ReflectiveMethodInvocation.java",
+                "line": 186,
+                "exact": false,
+                "location": "spring-aop-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor",
+                "method": "intercept",
+                "file": "CglibAopProxy.java",
+                "line": 688,
+                "exact": false,
+                "location": "spring-aop-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "br.com.altimus.service.fiscal.T_NotaFiscalService$$EnhancerBySpringCGLIB$$6cf61e21",
+                "method": "getImpostoItemNotaVeiculo",
+                "file": "<generated>",
+                "line": -1,
+                "exact": false,
+                "location": "altimus-service-1.0-SNAPSHOT.jar!/",
+                "version": "1.0-SNAPSHOT"
+            },
+            {
+                "class": "br.com.altimus.service.T_VeiculoService",
+                "method": "calcularLucroDoVeiculo",
+                "file": "T_VeiculoService.java",
+                "line": 2970,
+                "exact": false,
+                "location": "altimus-service-1.0-SNAPSHOT.jar!/",
+                "version": "1.0-SNAPSHOT"
+            },
+            {
+                "class": "br.com.altimus.service.T_VeiculoService$$FastClassBySpringCGLIB$$ede75b78",
+                "method": "invoke",
+                "file": "<generated>",
+                "line": -1,
+                "exact": false,
+                "location": "altimus-service-1.0-SNAPSHOT.jar!/",
+                "version": "1.0-SNAPSHOT"
+            },
+            {
+                "class": "org.springframework.cglib.proxy.MethodProxy",
+                "method": "invoke",
+                "file": "MethodProxy.java",
+                "line": 218,
+                "exact": false,
+                "location": "spring-core-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation",
+                "method": "invokeJoinpoint",
+                "file": "CglibAopProxy.java",
+                "line": 749,
+                "exact": false,
+                "location": "spring-aop-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.springframework.aop.framework.ReflectiveMethodInvocation",
+                "method": "proceed",
+                "file": "ReflectiveMethodInvocation.java",
+                "line": 163,
+                "exact": false,
+                "location": "spring-aop-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.springframework.transaction.interceptor.TransactionAspectSupport",
+                "method": "invokeWithinTransaction",
+                "file": "TransactionAspectSupport.java",
+                "line": 295,
+                "exact": false,
+                "location": "spring-tx-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.springframework.transaction.interceptor.TransactionInterceptor",
+                "method": "invoke",
+                "file": "TransactionInterceptor.java",
+                "line": 98,
+                "exact": false,
+                "location": "spring-tx-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.springframework.aop.framework.ReflectiveMethodInvocation",
+                "method": "proceed",
+                "file": "ReflectiveMethodInvocation.java",
+                "line": 186,
+                "exact": false,
+                "location": "spring-aop-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor",
+                "method": "intercept",
+                "file": "CglibAopProxy.java",
+                "line": 688,
+                "exact": false,
+                "location": "spring-aop-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "br.com.altimus.service.T_VeiculoService$$EnhancerBySpringCGLIB$$fc04e88a",
+                "method": "calcularLucroDoVeiculo",
+                "file": "<generated>",
+                "line": -1,
+                "exact": false,
+                "location": "altimus-service-1.0-SNAPSHOT.jar!/",
+                "version": "1.0-SNAPSHOT"
+            },
+            {
+                "class": "br.com.altimus.controller.T_VeiculoController",
+                "method": "calcularLucroDoVeiculo",
+                "file": "T_VeiculoController.java",
+                "line": 209,
+                "exact": false,
+                "location": "classes!/",
+                "version": "1.0-SNAPSHOT"
+            },
+            {
+                "class": "br.com.altimus.controller.T_VeiculoController$$FastClassBySpringCGLIB$$90ce7c3c",
+                "method": "invoke",
+                "file": "<generated>",
+                "line": -1,
+                "exact": false,
+                "location": "classes!/",
+                "version": "1.0-SNAPSHOT"
+            },
+            {
+                "class": "org.springframework.cglib.proxy.MethodProxy",
+                "method": "invoke",
+                "file": "MethodProxy.java",
+                "line": 218,
+                "exact": false,
+                "location": "spring-core-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation",
+                "method": "invokeJoinpoint",
+                "file": "CglibAopProxy.java",
+                "line": 749,
+                "exact": false,
+                "location": "spring-aop-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.springframework.aop.framework.ReflectiveMethodInvocation",
+                "method": "proceed",
+                "file": "ReflectiveMethodInvocation.java",
+                "line": 163,
+                "exact": false,
+                "location": "spring-aop-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor",
+                "method": "invoke",
+                "file": "MethodSecurityInterceptor.java",
+                "line": 69,
+                "exact": false,
+                "location": "spring-security-core-5.1.6.RELEASE.jar!/",
+                "version": "5.1.6.RELEASE"
+            },
+            {
+                "class": "org.springframework.aop.framework.ReflectiveMethodInvocation",
+                "method": "proceed",
+                "file": "ReflectiveMethodInvocation.java",
+                "line": 186,
+                "exact": false,
+                "location": "spring-aop-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor",
+                "method": "intercept",
+                "file": "CglibAopProxy.java",
+                "line": 688,
+                "exact": false,
+                "location": "spring-aop-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "br.com.altimus.controller.T_VeiculoController$$EnhancerBySpringCGLIB$$c976c39b",
+                "method": "calcularLucroDoVeiculo",
+                "file": "<generated>",
+                "line": -1,
+                "exact": false,
+                "location": "classes!/",
+                "version": "1.0-SNAPSHOT"
+            },
+            {
+                "class": "sun.reflect.NativeMethodAccessorImpl",
+                "method": "invoke0",
+                "file": "NativeMethodAccessorImpl.java",
+                "line": -2,
+                "exact": false,
+                "location": "?",
+                "version": "1.8.0_265"
+            },
+            {
+                "class": "sun.reflect.NativeMethodAccessorImpl",
+                "method": "invoke",
+                "file": "NativeMethodAccessorImpl.java",
+                "line": 62,
+                "exact": false,
+                "location": "?",
+                "version": "1.8.0_265"
+            },
+            {
+                "class": "sun.reflect.DelegatingMethodAccessorImpl",
+                "method": "invoke",
+                "file": "DelegatingMethodAccessorImpl.java",
+                "line": 43,
+                "exact": false,
+                "location": "?",
+                "version": "1.8.0_265"
+            },
+            {
+                "class": "java.lang.reflect.Method",
+                "method": "invoke",
+                "file": "Method.java",
+                "line": 498,
+                "exact": false,
+                "location": "?",
+                "version": "1.8.0_265"
+            },
+            {
+                "class": "org.springframework.web.method.support.InvocableHandlerMethod",
+                "method": "doInvoke",
+                "file": "InvocableHandlerMethod.java",
+                "line": 190,
+                "exact": false,
+                "location": "spring-web-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.springframework.web.method.support.InvocableHandlerMethod",
+                "method": "invokeForRequest",
+                "file": "InvocableHandlerMethod.java",
+                "line": 138,
+                "exact": false,
+                "location": "spring-web-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod",
+                "method": "invokeAndHandle",
+                "file": "ServletInvocableHandlerMethod.java",
+                "line": 104,
+                "exact": false,
+                "location": "spring-webmvc-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter",
+                "method": "invokeHandlerMethod",
+                "file": "RequestMappingHandlerAdapter.java",
+                "line": 892,
+                "exact": false,
+                "location": "spring-webmvc-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter",
+                "method": "handleInternal",
+                "file": "RequestMappingHandlerAdapter.java",
+                "line": 797,
+                "exact": false,
+                "location": "spring-webmvc-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter",
+                "method": "handle",
+                "file": "AbstractHandlerMethodAdapter.java",
+                "line": 87,
+                "exact": false,
+                "location": "spring-webmvc-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.springframework.web.servlet.DispatcherServlet",
+                "method": "doDispatch",
+                "file": "DispatcherServlet.java",
+                "line": 1039,
+                "exact": true,
+                "location": "spring-webmvc-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.springframework.web.servlet.DispatcherServlet",
+                "method": "doService",
+                "file": "DispatcherServlet.java",
+                "line": 942,
+                "exact": true,
+                "location": "spring-webmvc-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.springframework.web.servlet.FrameworkServlet",
+                "method": "processRequest",
+                "file": "FrameworkServlet.java",
+                "line": 1005,
+                "exact": true,
+                "location": "spring-webmvc-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.springframework.web.servlet.FrameworkServlet",
+                "method": "doPost",
+                "file": "FrameworkServlet.java",
+                "line": 908,
+                "exact": true,
+                "location": "spring-webmvc-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "javax.servlet.http.HttpServlet",
+                "method": "service",
+                "file": "HttpServlet.java",
+                "line": 665,
+                "exact": true,
+                "location": "javax.servlet-api-4.0.1.jar!/",
+                "version": "4.0.1"
+            },
+            {
+                "class": "org.springframework.web.servlet.FrameworkServlet",
+                "method": "service",
+                "file": "FrameworkServlet.java",
+                "line": 882,
+                "exact": true,
+                "location": "spring-webmvc-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "javax.servlet.http.HttpServlet",
+                "method": "service",
+                "file": "HttpServlet.java",
+                "line": 750,
+                "exact": true,
+                "location": "javax.servlet-api-4.0.1.jar!/",
+                "version": "4.0.1"
+            },
+            {
+                "class": "org.eclipse.jetty.servlet.ServletHolder",
+                "method": "handle",
+                "file": "ServletHolder.java",
+                "line": 876,
+                "exact": true,
+                "location": "jetty-servlet-9.4.19.v20190610.jar!/",
+                "version": "9.4.19.v20190610"
+            },
+            {
+                "class": "org.eclipse.jetty.servlet.ServletHandler$CachedChain",
+                "method": "doFilter",
+                "file": "ServletHandler.java",
+                "line": 1623,
+                "exact": true,
+                "location": "jetty-servlet-9.4.19.v20190610.jar!/",
+                "version": "9.4.19.v20190610"
+            },
+            {
+                "class": "org.eclipse.jetty.websocket.server.WebSocketUpgradeFilter",
+                "method": "doFilter",
+                "file": "WebSocketUpgradeFilter.java",
+                "line": 214,
+                "exact": true,
+                "location": "websocket-server-9.4.19.v20190610.jar!/",
+                "version": "9.4.19.v20190610"
+            },
+            {
+                "class": "org.eclipse.jetty.servlet.ServletHandler$CachedChain",
+                "method": "doFilter",
+                "file": "ServletHandler.java",
+                "line": 1610,
+                "exact": true,
+                "location": "jetty-servlet-9.4.19.v20190610.jar!/",
+                "version": "9.4.19.v20190610"
+            },
+            {
+                "class": "br.com.altimus.configuration.filter.SalvarIndicadoresFilter",
+                "method": "doFilter",
+                "file": "SalvarIndicadoresFilter.java",
+                "line": 51,
+                "exact": true,
+                "location": "classes!/",
+                "version": "1.0-SNAPSHOT"
+            },
+            {
+                "class": "org.eclipse.jetty.servlet.ServletHandler$CachedChain",
+                "method": "doFilter",
+                "file": "ServletHandler.java",
+                "line": 1610,
+                "exact": true,
+                "location": "jetty-servlet-9.4.19.v20190610.jar!/",
+                "version": "9.4.19.v20190610"
+            },
+            {
+                "class": "br.com.altimus.configuration.filter.GlobaisFilter",
+                "method": "doFilter",
+                "file": "GlobaisFilter.java",
+                "line": 42,
+                "exact": true,
+                "location": "classes!/",
+                "version": "1.0-SNAPSHOT"
+            },
+            {
+                "class": "org.eclipse.jetty.servlet.ServletHandler$CachedChain",
+                "method": "doFilter",
+                "file": "ServletHandler.java",
+                "line": 1610,
+                "exact": true,
+                "location": "jetty-servlet-9.4.19.v20190610.jar!/",
+                "version": "9.4.19.v20190610"
+            },
+            {
+                "class": "br.com.altimus.configuration.filter.UserLoggedFilter",
+                "method": "doFilter",
+                "file": "UserLoggedFilter.java",
+                "line": 122,
+                "exact": true,
+                "location": "classes!/",
+                "version": "1.0-SNAPSHOT"
+            },
+            {
+                "class": "org.eclipse.jetty.servlet.ServletHandler$CachedChain",
+                "method": "doFilter",
+                "file": "ServletHandler.java",
+                "line": 1610,
+                "exact": true,
+                "location": "jetty-servlet-9.4.19.v20190610.jar!/",
+                "version": "9.4.19.v20190610"
+            },
+            {
+                "class": "br.com.altimus.configuration.filter.LoggerFilter",
+                "method": "doFilter",
+                "file": "LoggerFilter.java",
+                "line": 40,
+                "exact": true,
+                "location": "classes!/",
+                "version": "1.0-SNAPSHOT"
+            },
+            {
+                "class": "org.eclipse.jetty.servlet.ServletHandler$CachedChain",
+                "method": "doFilter",
+                "file": "ServletHandler.java",
+                "line": 1610,
+                "exact": true,
+                "location": "jetty-servlet-9.4.19.v20190610.jar!/",
+                "version": "9.4.19.v20190610"
+            },
+            {
+                "class": "br.com.altimus.configuration.filter.HikariStatusFilter",
+                "method": "doFilter",
+                "file": "HikariStatusFilter.java",
+                "line": 97,
+                "exact": true,
+                "location": "classes!/",
+                "version": "1.0-SNAPSHOT"
+            },
+            {
+                "class": "org.eclipse.jetty.servlet.ServletHandler$CachedChain",
+                "method": "doFilter",
+                "file": "ServletHandler.java",
+                "line": 1610,
+                "exact": true,
+                "location": "jetty-servlet-9.4.19.v20190610.jar!/",
+                "version": "9.4.19.v20190610"
+            },
+            {
+                "class": "br.com.altimus.configuration.filter.CorsFilter",
+                "method": "doFilter",
+                "file": "CorsFilter.java",
+                "line": 50,
+                "exact": true,
+                "location": "classes!/",
+                "version": "1.0-SNAPSHOT"
+            },
+            {
+                "class": "org.eclipse.jetty.servlet.ServletHandler$CachedChain",
+                "method": "doFilter",
+                "file": "ServletHandler.java",
+                "line": 1610,
+                "exact": true,
+                "location": "jetty-servlet-9.4.19.v20190610.jar!/",
+                "version": "9.4.19.v20190610"
+            },
+            {
+                "class": "org.springframework.security.web.FilterChainProxy$VirtualFilterChain",
+                "method": "doFilter",
+                "file": "FilterChainProxy.java",
+                "line": 320,
+                "exact": true,
+                "location": "spring-security-web-5.1.6.RELEASE.jar!/",
+                "version": "5.1.6.RELEASE"
+            },
+            {
+                "class": "org.springframework.security.web.access.intercept.FilterSecurityInterceptor",
+                "method": "invoke",
+                "file": "FilterSecurityInterceptor.java",
+                "line": 127,
+                "exact": true,
+                "location": "spring-security-web-5.1.6.RELEASE.jar!/",
+                "version": "5.1.6.RELEASE"
+            },
+            {
+                "class": "org.springframework.security.web.access.intercept.FilterSecurityInterceptor",
+                "method": "doFilter",
+                "file": "FilterSecurityInterceptor.java",
+                "line": 91,
+                "exact": true,
+                "location": "spring-security-web-5.1.6.RELEASE.jar!/",
+                "version": "5.1.6.RELEASE"
+            },
+            {
+                "class": "org.springframework.security.web.FilterChainProxy$VirtualFilterChain",
+                "method": "doFilter",
+                "file": "FilterChainProxy.java",
+                "line": 334,
+                "exact": true,
+                "location": "spring-security-web-5.1.6.RELEASE.jar!/",
+                "version": "5.1.6.RELEASE"
+            },
+            {
+                "class": "org.springframework.security.web.access.ExceptionTranslationFilter",
+                "method": "doFilter",
+                "file": "ExceptionTranslationFilter.java",
+                "line": 119,
+                "exact": true,
+                "location": "spring-security-web-5.1.6.RELEASE.jar!/",
+                "version": "5.1.6.RELEASE"
+            },
+            {
+                "class": "org.springframework.security.web.FilterChainProxy$VirtualFilterChain",
+                "method": "doFilter",
+                "file": "FilterChainProxy.java",
+                "line": 334,
+                "exact": true,
+                "location": "spring-security-web-5.1.6.RELEASE.jar!/",
+                "version": "5.1.6.RELEASE"
+            },
+            {
+                "class": "org.springframework.security.web.session.SessionManagementFilter",
+                "method": "doFilter",
+                "file": "SessionManagementFilter.java",
+                "line": 137,
+                "exact": true,
+                "location": "spring-security-web-5.1.6.RELEASE.jar!/",
+                "version": "5.1.6.RELEASE"
+            },
+            {
+                "class": "org.springframework.security.web.FilterChainProxy$VirtualFilterChain",
+                "method": "doFilter",
+                "file": "FilterChainProxy.java",
+                "line": 334,
+                "exact": true,
+                "location": "spring-security-web-5.1.6.RELEASE.jar!/",
+                "version": "5.1.6.RELEASE"
+            },
+            {
+                "class": "org.springframework.security.web.authentication.AnonymousAuthenticationFilter",
+                "method": "doFilter",
+                "file": "AnonymousAuthenticationFilter.java",
+                "line": 111,
+                "exact": true,
+                "location": "spring-security-web-5.1.6.RELEASE.jar!/",
+                "version": "5.1.6.RELEASE"
+            },
+            {
+                "class": "org.springframework.security.web.FilterChainProxy$VirtualFilterChain",
+                "method": "doFilter",
+                "file": "FilterChainProxy.java",
+                "line": 334,
+                "exact": true,
+                "location": "spring-security-web-5.1.6.RELEASE.jar!/",
+                "version": "5.1.6.RELEASE"
+            },
+            {
+                "class": "org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter",
+                "method": "doFilter",
+                "file": "SecurityContextHolderAwareRequestFilter.java",
+                "line": 170,
+                "exact": true,
+                "location": "spring-security-web-5.1.6.RELEASE.jar!/",
+                "version": "5.1.6.RELEASE"
+            },
+            {
+                "class": "org.springframework.security.web.FilterChainProxy$VirtualFilterChain",
+                "method": "doFilter",
+                "file": "FilterChainProxy.java",
+                "line": 334,
+                "exact": true,
+                "location": "spring-security-web-5.1.6.RELEASE.jar!/",
+                "version": "5.1.6.RELEASE"
+            },
+            {
+                "class": "org.springframework.security.web.savedrequest.RequestCacheAwareFilter",
+                "method": "doFilter",
+                "file": "RequestCacheAwareFilter.java",
+                "line": 63,
+                "exact": true,
+                "location": "spring-security-web-5.1.6.RELEASE.jar!/",
+                "version": "5.1.6.RELEASE"
+            },
+            {
+                "class": "org.springframework.security.web.FilterChainProxy$VirtualFilterChain",
+                "method": "doFilter",
+                "file": "FilterChainProxy.java",
+                "line": 334,
+                "exact": true,
+                "location": "spring-security-web-5.1.6.RELEASE.jar!/",
+                "version": "5.1.6.RELEASE"
+            },
+            {
+                "class": "org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter",
+                "method": "doFilter",
+                "file": "OAuth2AuthenticationProcessingFilter.java",
+                "line": 176,
+                "exact": true,
+                "location": "spring-security-oauth2-2.2.5.RELEASE.jar!/",
+                "version": "?"
+            },
+            {
+                "class": "org.springframework.security.web.FilterChainProxy$VirtualFilterChain",
+                "method": "doFilter",
+                "file": "FilterChainProxy.java",
+                "line": 334,
+                "exact": true,
+                "location": "spring-security-web-5.1.6.RELEASE.jar!/",
+                "version": "5.1.6.RELEASE"
+            },
+            {
+                "class": "org.springframework.security.web.authentication.logout.LogoutFilter",
+                "method": "doFilter",
+                "file": "LogoutFilter.java",
+                "line": 116,
+                "exact": true,
+                "location": "spring-security-web-5.1.6.RELEASE.jar!/",
+                "version": "5.1.6.RELEASE"
+            },
+            {
+                "class": "org.springframework.security.web.FilterChainProxy$VirtualFilterChain",
+                "method": "doFilter",
+                "file": "FilterChainProxy.java",
+                "line": 334,
+                "exact": true,
+                "location": "spring-security-web-5.1.6.RELEASE.jar!/",
+                "version": "5.1.6.RELEASE"
+            },
+            {
+                "class": "org.springframework.security.web.header.HeaderWriterFilter",
+                "method": "doFilterInternal",
+                "file": "HeaderWriterFilter.java",
+                "line": 74,
+                "exact": true,
+                "location": "spring-security-web-5.1.6.RELEASE.jar!/",
+                "version": "5.1.6.RELEASE"
+            },
+            {
+                "class": "org.springframework.web.filter.OncePerRequestFilter",
+                "method": "doFilter",
+                "file": "OncePerRequestFilter.java",
+                "line": 118,
+                "exact": true,
+                "location": "spring-web-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.springframework.security.web.FilterChainProxy$VirtualFilterChain",
+                "method": "doFilter",
+                "file": "FilterChainProxy.java",
+                "line": 334,
+                "exact": true,
+                "location": "spring-security-web-5.1.6.RELEASE.jar!/",
+                "version": "5.1.6.RELEASE"
+            },
+            {
+                "class": "org.springframework.security.web.context.SecurityContextPersistenceFilter",
+                "method": "doFilter",
+                "file": "SecurityContextPersistenceFilter.java",
+                "line": 105,
+                "exact": true,
+                "location": "spring-security-web-5.1.6.RELEASE.jar!/",
+                "version": "5.1.6.RELEASE"
+            },
+            {
+                "class": "org.springframework.security.web.FilterChainProxy$VirtualFilterChain",
+                "method": "doFilter",
+                "file": "FilterChainProxy.java",
+                "line": 334,
+                "exact": true,
+                "location": "spring-security-web-5.1.6.RELEASE.jar!/",
+                "version": "5.1.6.RELEASE"
+            },
+            {
+                "class": "org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter",
+                "method": "doFilterInternal",
+                "file": "WebAsyncManagerIntegrationFilter.java",
+                "line": 56,
+                "exact": true,
+                "location": "spring-security-web-5.1.6.RELEASE.jar!/",
+                "version": "5.1.6.RELEASE"
+            },
+            {
+                "class": "org.springframework.web.filter.OncePerRequestFilter",
+                "method": "doFilter",
+                "file": "OncePerRequestFilter.java",
+                "line": 118,
+                "exact": true,
+                "location": "spring-web-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.springframework.security.web.FilterChainProxy$VirtualFilterChain",
+                "method": "doFilter",
+                "file": "FilterChainProxy.java",
+                "line": 334,
+                "exact": true,
+                "location": "spring-security-web-5.1.6.RELEASE.jar!/",
+                "version": "5.1.6.RELEASE"
+            },
+            {
+                "class": "org.springframework.security.web.FilterChainProxy",
+                "method": "doFilterInternal",
+                "file": "FilterChainProxy.java",
+                "line": 215,
+                "exact": true,
+                "location": "spring-security-web-5.1.6.RELEASE.jar!/",
+                "version": "5.1.6.RELEASE"
+            },
+            {
+                "class": "org.springframework.security.web.FilterChainProxy",
+                "method": "doFilter",
+                "file": "FilterChainProxy.java",
+                "line": 178,
+                "exact": true,
+                "location": "spring-security-web-5.1.6.RELEASE.jar!/",
+                "version": "5.1.6.RELEASE"
+            },
+            {
+                "class": "org.springframework.web.filter.DelegatingFilterProxy",
+                "method": "invokeDelegate",
+                "file": "DelegatingFilterProxy.java",
+                "line": 357,
+                "exact": true,
+                "location": "spring-web-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.springframework.web.filter.DelegatingFilterProxy",
+                "method": "doFilter",
+                "file": "DelegatingFilterProxy.java",
+                "line": 270,
+                "exact": true,
+                "location": "spring-web-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.eclipse.jetty.servlet.ServletHandler$CachedChain",
+                "method": "doFilter",
+                "file": "ServletHandler.java",
+                "line": 1610,
+                "exact": true,
+                "location": "jetty-servlet-9.4.19.v20190610.jar!/",
+                "version": "9.4.19.v20190610"
+            },
+            {
+                "class": "org.springframework.web.filter.RequestContextFilter",
+                "method": "doFilterInternal",
+                "file": "RequestContextFilter.java",
+                "line": 99,
+                "exact": true,
+                "location": "spring-web-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.springframework.web.filter.OncePerRequestFilter",
+                "method": "doFilter",
+                "file": "OncePerRequestFilter.java",
+                "line": 118,
+                "exact": true,
+                "location": "spring-web-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.eclipse.jetty.servlet.ServletHandler$CachedChain",
+                "method": "doFilter",
+                "file": "ServletHandler.java",
+                "line": 1610,
+                "exact": true,
+                "location": "jetty-servlet-9.4.19.v20190610.jar!/",
+                "version": "9.4.19.v20190610"
+            },
+            {
+                "class": "org.springframework.web.filter.FormContentFilter",
+                "method": "doFilterInternal",
+                "file": "FormContentFilter.java",
+                "line": 92,
+                "exact": true,
+                "location": "spring-web-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.springframework.web.filter.OncePerRequestFilter",
+                "method": "doFilter",
+                "file": "OncePerRequestFilter.java",
+                "line": 118,
+                "exact": true,
+                "location": "spring-web-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.eclipse.jetty.servlet.ServletHandler$CachedChain",
+                "method": "doFilter",
+                "file": "ServletHandler.java",
+                "line": 1610,
+                "exact": true,
+                "location": "jetty-servlet-9.4.19.v20190610.jar!/",
+                "version": "9.4.19.v20190610"
+            },
+            {
+                "class": "org.springframework.web.filter.HiddenHttpMethodFilter",
+                "method": "doFilterInternal",
+                "file": "HiddenHttpMethodFilter.java",
+                "line": 93,
+                "exact": true,
+                "location": "spring-web-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.springframework.web.filter.OncePerRequestFilter",
+                "method": "doFilter",
+                "file": "OncePerRequestFilter.java",
+                "line": 118,
+                "exact": true,
+                "location": "spring-web-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.eclipse.jetty.servlet.ServletHandler$CachedChain",
+                "method": "doFilter",
+                "file": "ServletHandler.java",
+                "line": 1610,
+                "exact": true,
+                "location": "jetty-servlet-9.4.19.v20190610.jar!/",
+                "version": "9.4.19.v20190610"
+            },
+            {
+                "class": "org.springframework.web.filter.CharacterEncodingFilter",
+                "method": "doFilterInternal",
+                "file": "CharacterEncodingFilter.java",
+                "line": 200,
+                "exact": true,
+                "location": "spring-web-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.springframework.web.filter.OncePerRequestFilter",
+                "method": "doFilter",
+                "file": "OncePerRequestFilter.java",
+                "line": 118,
+                "exact": true,
+                "location": "spring-web-5.1.9.RELEASE.jar!/",
+                "version": "5.1.9.RELEASE"
+            },
+            {
+                "class": "org.eclipse.jetty.servlet.ServletHandler$CachedChain",
+                "method": "doFilter",
+                "file": "ServletHandler.java",
+                "line": 1610,
+                "exact": true,
+                "location": "jetty-servlet-9.4.19.v20190610.jar!/",
+                "version": "9.4.19.v20190610"
+            },
+            {
+                "class": "org.eclipse.jetty.servlet.ServletHandler",
+                "method": "doHandle",
+                "file": "ServletHandler.java",
+                "line": 540,
+                "exact": true,
+                "location": "jetty-servlet-9.4.19.v20190610.jar!/",
+                "version": "9.4.19.v20190610"
+            },
+            {
+                "class": "org.eclipse.jetty.server.handler.ScopedHandler",
+                "method": "handle",
+                "file": "ScopedHandler.java",
+                "line": 146,
+                "exact": true,
+                "location": "jetty-server-9.4.19.v20190610.jar!/",
+                "version": "9.4.19.v20190610"
+            },
+            {
+                "class": "org.eclipse.jetty.security.SecurityHandler",
+                "method": "handle",
+                "file": "SecurityHandler.java",
+                "line": 548,
+                "exact": true,
+                "location": "jetty-security-9.4.19.v20190610.jar!/",
+                "version": "9.4.19.v20190610"
+            },
+            {
+                "class": "org.eclipse.jetty.server.handler.HandlerWrapper",
+                "method": "handle",
+                "file": "HandlerWrapper.java",
+                "line": 132,
+                "exact": true,
+                "location": "jetty-server-9.4.19.v20190610.jar!/",
+                "version": "9.4.19.v20190610"
+            },
+            {
+                "class": "org.eclipse.jetty.server.handler.ScopedHandler",
+                "method": "nextHandle",
+                "file": "ScopedHandler.java",
+                "line": 257,
+                "exact": true,
+                "location": "jetty-server-9.4.19.v20190610.jar!/",
+                "version": "9.4.19.v20190610"
+            },
+            {
+                "class": "org.eclipse.jetty.server.session.SessionHandler",
+                "method": "doHandle",
+                "file": "SessionHandler.java",
+                "line": 1711,
+                "exact": true,
+                "location": "jetty-server-9.4.19.v20190610.jar!/",
+                "version": "9.4.19.v20190610"
+            },
+            {
+                "class": "org.eclipse.jetty.server.handler.ScopedHandler",
+                "method": "nextHandle",
+                "file": "ScopedHandler.java",
+                "line": 255,
+                "exact": true,
+                "location": "jetty-server-9.4.19.v20190610.jar!/",
+                "version": "9.4.19.v20190610"
+            },
+            {
+                "class": "org.eclipse.jetty.server.handler.ContextHandler",
+                "method": "doHandle",
+                "file": "ContextHandler.java",
+                "line": 1347,
+                "exact": true,
+                "location": "jetty-server-9.4.19.v20190610.jar!/",
+                "version": "9.4.19.v20190610"
+            },
+            {
+                "class": "org.eclipse.jetty.server.handler.ScopedHandler",
+                "method": "nextScope",
+                "file": "ScopedHandler.java",
+                "line": 203,
+                "exact": true,
+                "location": "jetty-server-9.4.19.v20190610.jar!/",
+                "version": "9.4.19.v20190610"
+            },
+            {
+                "class": "org.eclipse.jetty.servlet.ServletHandler",
+                "method": "doScope",
+                "file": "ServletHandler.java",
+                "line": 480,
+                "exact": true,
+                "location": "jetty-servlet-9.4.19.v20190610.jar!/",
+                "version": "9.4.19.v20190610"
+            },
+            {
+                "class": "org.eclipse.jetty.server.session.SessionHandler",
+                "method": "doScope",
+                "file": "SessionHandler.java",
+                "line": 1678,
+                "exact": true,
+                "location": "jetty-server-9.4.19.v20190610.jar!/",
+                "version": "9.4.19.v20190610"
+            },
+            {
+                "class": "org.eclipse.jetty.server.handler.ScopedHandler",
+                "method": "nextScope",
+                "file": "ScopedHandler.java",
+                "line": 201,
+                "exact": true,
+                "location": "jetty-server-9.4.19.v20190610.jar!/",
+                "version": "9.4.19.v20190610"
+            },
+            {
+                "class": "org.eclipse.jetty.server.handler.ContextHandler",
+                "method": "doScope",
+                "file": "ContextHandler.java",
+                "line": 1249,
+                "exact": true,
+                "location": "jetty-server-9.4.19.v20190610.jar!/",
+                "version": "9.4.19.v20190610"
+            },
+            {
+                "class": "org.eclipse.jetty.server.handler.ScopedHandler",
+                "method": "handle",
+                "file": "ScopedHandler.java",
+                "line": 144,
+                "exact": true,
+                "location": "jetty-server-9.4.19.v20190610.jar!/",
+                "version": "9.4.19.v20190610"
+            },
+            {
+                "class": "org.eclipse.jetty.server.handler.gzip.GzipHandler",
+                "method": "handle",
+                "file": "GzipHandler.java",
+                "line": 753,
+                "exact": true,
+                "location": "jetty-server-9.4.19.v20190610.jar!/",
+                "version": "9.4.19.v20190610"
+            },
+            {
+                "class": "org.eclipse.jetty.server.handler.HandlerWrapper",
+                "method": "handle",
+                "file": "HandlerWrapper.java",
+                "line": 132,
+                "exact": true,
+                "location": "jetty-server-9.4.19.v20190610.jar!/",
+                "version": "9.4.19.v20190610"
+            },
+            {
+                "class": "org.eclipse.jetty.server.Server",
+                "method": "handle",
+                "file": "Server.java",
+                "line": 505,
+                "exact": true,
+                "location": "jetty-server-9.4.19.v20190610.jar!/",
+                "version": "9.4.19.v20190610"
+            },
+            {
+                "class": "org.eclipse.jetty.server.HttpChannel",
+                "method": "handle",
+                "file": "HttpChannel.java",
+                "line": 370,
+                "exact": true,
+                "location": "jetty-server-9.4.19.v20190610.jar!/",
+                "version": "9.4.19.v20190610"
+            },
+            {
+                "class": "org.eclipse.jetty.server.HttpConnection",
+                "method": "onFillable",
+                "file": "HttpConnection.java",
+                "line": 267,
+                "exact": true,
+                "location": "jetty-server-9.4.19.v20190610.jar!/",
+                "version": "9.4.19.v20190610"
+            },
+            {
+                "class": "org.eclipse.jetty.io.AbstractConnection$ReadCallback",
+                "method": "succeeded",
+                "file": "AbstractConnection.java",
+                "line": 305,
+                "exact": true,
+                "location": "jetty-io-9.4.19.v20190610.jar!/",
+                "version": "9.4.19.v20190610"
+            },
+            {
+                "class": "org.eclipse.jetty.io.FillInterest",
+                "method": "fillable",
+                "file": "FillInterest.java",
+                "line": 103,
+                "exact": true,
+                "location": "jetty-io-9.4.19.v20190610.jar!/",
+                "version": "9.4.19.v20190610"
+            },
+            {
+                "class": "org.eclipse.jetty.io.ChannelEndPoint$2",
+                "method": "run",
+                "file": "ChannelEndPoint.java",
+                "line": 117,
+                "exact": true,
+                "location": "jetty-io-9.4.19.v20190610.jar!/",
+                "version": "9.4.19.v20190610"
+            },
+            {
+                "class": "org.eclipse.jetty.util.thread.strategy.EatWhatYouKill",
+                "method": "runTask",
+                "file": "EatWhatYouKill.java",
+                "line": 333,
+                "exact": true,
+                "location": "jetty-util-9.4.19.v20190610.jar!/",
+                "version": "9.4.19.v20190610"
+            },
+            {
+                "class": "org.eclipse.jetty.util.thread.strategy.EatWhatYouKill",
+                "method": "doProduce",
+                "file": "EatWhatYouKill.java",
+                "line": 310,
+                "exact": true,
+                "location": "jetty-util-9.4.19.v20190610.jar!/",
+                "version": "9.4.19.v20190610"
+            },
+            {
+                "class": "org.eclipse.jetty.util.thread.strategy.EatWhatYouKill",
+                "method": "tryProduce",
+                "file": "EatWhatYouKill.java",
+                "line": 168,
+                "exact": true,
+                "location": "jetty-util-9.4.19.v20190610.jar!/",
+                "version": "9.4.19.v20190610"
+            },
+            {
+                "class": "org.eclipse.jetty.util.thread.strategy.EatWhatYouKill",
+                "method": "run",
+                "file": "EatWhatYouKill.java",
+                "line": 126,
+                "exact": true,
+                "location": "jetty-util-9.4.19.v20190610.jar!/",
+                "version": "9.4.19.v20190610"
+            },
+            {
+                "class": "org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread",
+                "method": "run",
+                "file": "ReservedThreadExecutor.java",
+                "line": 366,
+                "exact": true,
+                "location": "jetty-util-9.4.19.v20190610.jar!/",
+                "version": "9.4.19.v20190610"
+            },
+            {
+                "class": "org.eclipse.jetty.util.thread.QueuedThreadPool",
+                "method": "runJob",
+                "file": "QueuedThreadPool.java",
+                "line": 781,
+                "exact": true,
+                "location": "jetty-util-9.4.19.v20190610.jar!/",
+                "version": "9.4.19.v20190610"
+            },
+            {
+                "class": "org.eclipse.jetty.util.thread.QueuedThreadPool$Runner",
+                "method": "run",
+                "file": "QueuedThreadPool.java",
+                "line": 917,
+                "exact": true,
+                "location": "jetty-util-9.4.19.v20190610.jar!/",
+                "version": "9.4.19.v20190610"
+            },
+            {
+                "class": "java.lang.Thread",
+                "method": "run",
+                "file": "Thread.java",
+                "line": 748,
+                "exact": true,
+                "location": "?",
+                "version": "1.8.0_265"
+            }
+        ]
+    },
+    "endOfBatch": false,
+    "loggerFqcn": "org.apache.logging.slf4j.Log4jLogger",
+    "contextMap": {
+        "tenant": "5c0e681e-4e50-4955-80ee-9982c65fd15f",
+        "username": "pedro.garcia@altimus.com.br"
+    },
+    "threadId": 93,
+    "threadPriority": 5,
+    "date": "16-09-2024 15:44:46.212-0300"
+}

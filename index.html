@@ -13,55 +13,112 @@
             Olá, use sempre que precisar e se puder, contribua com seu 
             <a href="https://github.com/PedroAFG">feedback</a>!
         </h1>
-
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <!-- forms para entrada da expressão -->
-                <form id="cronForm">
-                    <div class="mb-3">
-                        <label for="cronExpression" class="form-label">Insira a Expressão Cronológica</label>
-                        <input type="text" class="form-control" id="cronExpression" placeholder="Exemplo: 0 */30 * * * *">
+        <!--aba de navegação criada para utilizar as funções de criação e inserção de expressão-->
+        <div class="card text-center mt-5">
+            <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="tab1-tab" data-bs-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Insira sua expressão cronológica</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tab2-tab" data-bs-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Crie sua expressão</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tab3-tab" data-bs-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">Documentação</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-body">
+                <div class="tab-content" id="myTabContent">
+                    <!-- conteudo da aba 1 -->
+                    <div class="tab-pane fade show active mt-5" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6">
+                                <!-- forms para entrada da expressão -->
+                                <form id="cronForm">
+                                    <div class="mb-3">
+                                        <h5><label for="cronExpression" class="form-label" style="margin-bottom: 20px;"><b>Insira a Expressão Cronológica:</b></label></h5>
+                                        <input type="text" class="form-control" id="cronExpression" placeholder="Exemplo: 0 */30 * * * *">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary w-100">Interpretar Expressão</button>
+                                </form>
+                
+                                <!-- resultado da expressão -->
+                                <div class="mt-5">
+                                    <h5>Interpretação:</h5>
+                                    <p id="result" class="alert alert-secondary" style="text-align: justify;">Aguardando entrada...</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <button type="submit" class="btn btn-primary w-100">Interpretar Expressão</button>
-                </form>
-
-                <!-- resultado da expressão -->
-                <div class="mt-4">
-                    <h5>Interpretação:</h5>
-                    <p id="result" class="alert alert-secondary">Aguardando entrada...</p>
+                    
+                    <!-- conteudo da aba 2 -->
+                    <div class="tab-pane fade mt-5" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+                        <div class="table-responsive"> <!-- mantém responsividade da tabela dentro da div -->
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Segundo</th>
+                                        <th scope="col">Minutos</th>
+                                        <th scope="col">Hora</th>
+                                        <th scope="col">Dia(s)</th>
+                                        <th scope="col">Mês(s)</th>
+                                        <th scope="col">Dia da semana</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Dados</th>
+                                        <td><input type="text" placeholder="Segundo"></td>
+                                        <td><input type="text" placeholder="Minuto"></td>
+                                        <td><input type="text" placeholder="Hora"></td>
+                                        <td><input type="text" placeholder="Dia(s) - Separe por vírgula"></td>
+                                        <td><input type="text" placeholder="Mês"></td>
+                                        <td><input type="text" placeholder="Dia da semana"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button type="submit" class="btn btn-primary w-35 mb-5">Criar Expressão</button>
+                        </div>
+                    </div>
+                    
+                    <!-- conteudo da aba 3 -->
+                    <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
+                        <div class="row justify-content-center mt-5">
+                            <div class="col-md-8">
+                                <h2>Resumo e Exemplos dos Símbolos <code>?</code> e <code>,</code></h2>
+                                <div class="alert alert-info">
+                                    <h5>Uso da Vírgula ( <code>,</code> )</h5>
+                                    <p style="text-align: justify;">
+                                        A vírgula permite especificar múltiplos valores para um campo. 
+                                        Por exemplo, a expressão <code>0 30 9,13 * * *</code> indica que a tarefa será executada às 9h e às 13h.
+                                    </p>
+                                    <h5>Uso do Ponto de Interrogação ( <code>?</code> )</h5>
+                                    <p style="text-align: justify;" >
+                                        O ponto de interrogação é usado nos campos <i>Dia do Mês</i> ou <i>Dia da Semana</i> para indicar que o valor é irrelevante.
+                                        Por exemplo, a expressão <code>0 0 15 ? * *</code> indica que a tarefa será executada às 15h, independentemente do dia do mês.
+                                    </p>
+                                    <h5>Exemplos:</h5>
+                                    <ul style="text-align: justify;">
+                                        <li><code>0 30 9,13 * * *</code> – Executa às 9h e às 13h.</li>
+                                        <li><code>0 0 15 ? * *</code> – Executa às 15h, ignorando o dia do mês.</li>
+                                        <li><code>0 30 9 ? * *</code> – Executa às 9h, ignorando o dia do mês.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <!-- documentação das expressões -->
-        <div class="row justify-content-center mt-5">
-            <div class="col-md-8">
-                <h2>Resumo e Exemplos dos Símbolos <code>?</code> e <code>,</code></h2>
-                <div class="alert alert-info">
-                    <h5>Uso da Vírgula ( <code>,</code> )</h5>
-                    <p>
-                        A vírgula permite especificar múltiplos valores para um campo. 
-                        Por exemplo, a expressão <code>0 30 9,13 * * *</code> indica que a tarefa será executada às 9h e às 13h.
-                    </p>
-                    <h5>Uso do Ponto de Interrogação ( <code>?</code> )</h5>
-                    <p>
-                        O ponto de interrogação é usado nos campos <i>Dia do Mês</i> ou <i>Dia da Semana</i> para indicar que o valor é irrelevante.
-                        Por exemplo, a expressão <code>0 0 15 ? * *</code> indica que a tarefa será executada às 15h, independentemente do dia do mês.
-                    </p>
-                    <h5>Exemplos:</h5>
-                    <ul>
-                        <li><code>0 30 9,13 * * *</code> – Executa às 9h e às 13h.</li>
-                        <li><code>0 0 15 ? * *</code> – Executa às 15h, ignorando o dia do mês.</li>
-                        <li><code>0 30 9 ? * *</code> – Executa às 9h, ignorando o dia do mês.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="signature">
-        by pedrinho
     </div>    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
+<footer>
+    <div class="signature">
+        by pedrinho
+    </div>
+</footer>
 </html>

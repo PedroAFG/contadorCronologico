@@ -1,9 +1,21 @@
 .signature {
     position: fixed;
     bottom: 10px;
-    right: 10px;
-    font-size: 14px;
-    color: #333;
-    opacity: 0.7;
-    font-family: Arial, sans-serif;
+    right: 60px;
+    font-size: 20px;
+    color: #000000;
+    opacity: 1.0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card-header {
+    background-color: rgb(241, 248, 168);
+}
+
+.card-body {
+    height: 600px;
+}
+
+#tab2 {
+    margin-bottom: 50px;
 }
