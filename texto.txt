@@ -1,0 +1,28 @@
+import javax.crypto.Cipher;
+import javax.crypto.spec.SecretKeySpec;
+import java.util.Base64;
+
+public class CriptografiaBlowfish {
+    public static void main(String[] args) throws Exception {
+        // Definindo a chave [65, 66, 67, 68, 69] que é a sequência de bytes 'ABCDE'
+        byte[] keyBytes = new byte[]{65, 66, 67, 68, 69}; 
+        SecretKeySpec key = new SecretKeySpec(keyBytes, "Blowfish");
+
+        // Inicializando o Cipher com Blowfish no modo ECB e PKCS5Padding
+        Cipher cipher = Cipher.getInstance("Blowfish/ECB/PKCS5Padding");
+        cipher.init(Cipher.ENCRYPT_MODE, key);
+
+        // Texto a ser criptografado
+        String textoSimples = "FURB";
+        byte[] textoCifrado = cipher.doFinal(textoSimples.getBytes());
+
+        // Exibindo o resultado em hexadecimal
+        StringBuilder sb = new StringBuilder();
+        for (byte b : textoCifrado) {
+            sb.append(String.format("%02X", b));
+        }
+
+        System.out.println("Texto Cifrado (Hexadecimal): " + sb.toString());
+        System.out.println("Tamanho do Texto Cifrado: " + textoCifrado.length);
+    }
+}
